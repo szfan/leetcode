@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Alibaba.com.
  */
-package linearTabel.arrays;
+package linearTable.arrays;
 
 /**
  * 类ValidSudoku.java的实现描述：TODO 类实现描述 

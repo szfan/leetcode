@@ -1,4 +1,4 @@
-package linearTabel.arrays;
+package linearTable.arrays;
 
 /**
  * 类RemoveDuplicatesFromSortedArray.java的实现描述：TODO 类实现描述 

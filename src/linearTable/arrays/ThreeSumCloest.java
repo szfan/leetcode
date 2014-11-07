@@ -1,4 +1,4 @@
-package linearTabel.arrays;
+package linearTable.arrays;
 
 import java.util.Arrays;
 

@@ -5,23 +5,25 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Alibaba.com.
  */
-package linearTabel.arrays;
+package linearTable.arrays;
 
 /**
- * 类SingleNumber.java的实现描述：TODO 类实现描述 
- * @author zefan.szf 2014年11月6日 下午5:10:56
+ * 类SingleNumberOOII.java的实现描述：TODO 类实现描述 
+ * @author zefan.szf 2014年11月6日 下午5:43:24
  */
-public class SingleNumber {
+public class SingleNumberII {
     public int singleNumber(int[] A) {
-        int result = 0;
+        int one = 0, two = 0, three = 0;
         for(int i = 0; i < A.length; ++i) {
-            result = result ^ A[i];
+            two |= one & A[i];
+            one ^= A[i];
+            three = ~(one & two);
+            one &= three;
+            two &= three;
         }
-        return result;
+        return one;
     }
     public static void main(String... args) {
-        int[] A = {1, 2, 2, 3, 4, 3, 1};
-        SingleNumber sn = new SingleNumber();
-        System.out.println(sn.singleNumber(A));
+        
     }
 }
