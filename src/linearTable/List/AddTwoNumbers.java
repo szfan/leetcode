@@ -1,29 +1,10 @@
 package linearTable.List;
 
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-
-/**
  * 类AddTwoNumbers.java的实现描述：TODO 类实现描述 
  * @author zefan.szf 2014年11月7日 上午10:58:50
  */
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
+
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode(0);
